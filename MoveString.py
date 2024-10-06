@@ -22,10 +22,3 @@ class MoveString:
         # This will be used for print()
         return f"Movemap is -> {self.movemap}"
     
-def main():
-    str = "lol"
-    move = MoveString(str)
-    print(move)
-
-if __name__ == "__main__":
-    main()
