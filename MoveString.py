@@ -6,10 +6,8 @@ class MoveString:
     """
     def __init__(self,word) -> None:
         self.n = len(word)
-        self.movemap = {}
-        for i in range(self.n-1):
-            self.movemap[word[i]] = self.n - i - 1
-
+        self.movemap = {word[i] : self.n - i - 1 
+                        for i in range(self.n-1)}
     """
     get a char and return 
     its move string 
@@ -23,3 +21,11 @@ class MoveString:
     def __str__(self):
         # This will be used for print()
         return f"Movemap is -> {self.movemap}"
+    
+def main():
+    str = "lol"
+    move = MoveString(str)
+    print(move)
+
+if __name__ == "__main__":
+    main()
