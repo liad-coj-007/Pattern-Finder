@@ -1,6 +1,8 @@
 import sys
 from suffiexMove import suffiexMove
 from MoveString import MoveString
+import time
+
 
 class StringFinder:
     """
@@ -45,8 +47,12 @@ def find_str_on_file(word,path,outputpath):
     with open(path,"r") as infile:
         strfinder = StringFinder(word)
         txt = infile.read()
+        start_time = time.time()  
         lst = strfinder.find(txt)
         write_with_operator(lst,txt,outputpath)
+        end_time = time.time()
+        execution_time = end_time - start_time
+        print(f"Execution time: {execution_time:.4f} seconds")  
 
 
 
