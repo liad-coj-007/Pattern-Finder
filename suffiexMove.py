@@ -1,4 +1,3 @@
-
 class suffiexMove():
     """
         build suffiex move 
