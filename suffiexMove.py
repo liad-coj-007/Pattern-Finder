@@ -63,13 +63,3 @@ class suffiexMove():
     def __str__(self):
         # This will be used for print()
         return f"Suffiex is -> {self.lst}"
-
-
-def main():
-    str = "ABCXXX"
-    suffiex = suffiexMove(str)
-    print(suffiex)
-
-
-if __name__ == "__main__":
-    main()
