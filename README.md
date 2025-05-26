@@ -19,5 +19,3 @@ hello world. hello again.
 and we search on this txt `hello` the output file will be
 ```
 *hello world. *hello again.
-
-
