@@ -1,6 +1,8 @@
-# Pattern-Finder
-find a string on big txt file fast
-# usage
+# 📘 Pattern-Finder
+Efficiently find a word or phrase in a large `.txt` file and mark its occurrences.
+
+## ⚙️ Usage
+```bash
 python3 StringFinder.py -w <word> -f <input_file> -o <output_file>
 - word the word or phrase you want to find
 - input_file the file to search in
